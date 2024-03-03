@@ -6,6 +6,7 @@ The game is set on a gray playing field with a size of 12x12 units, divided into
 A snake is placed on the playing field, initially consisting of a single cube at a random unit square.
 A red apple is placed in a random cell on the playing field.
 The snake moves forward by one unit every 250 ms, controlled by arrow keys to specify direction.
+
 **2. Visual Elements**
 The playing field is set on a large gray field inside a skybox, with textures applied to create a realistic environment.
 Walls of height 1 serve as boundaries to the playing field, with textures applied for visual detail.
@@ -14,9 +15,11 @@ The apple object is placed on the playing field and textured with a red apple im
 A display board is added to show the snake game, with a camera located at the head of the snake and looking in the direction of motion.
 A 3D clock is added to the right-top corner of the display board to display the time.
 Text geometry is added to display the length of the snake at the right-bottom corner of the display board.
+
 **3. Lighting and Shadows**
 Lighting is implemented with a spot light and ambient light in the scene, adjusted for proper intensity.
 Shadows are cast by the snake, apple, boundary walls, and display board on the ground and playing field, enhancing visual realism.
+
 **4. Scalability**
 The project is designed for scalability, allowing for potential future enhancements or additions to gameplay mechanics, visual elements, and overall functionality.
 
