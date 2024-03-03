@@ -1,21 +1,24 @@
 # Snake-Game-in-Three.js
 This is a Snake game implemented using Three.js, a popular JavaScript library for creating 3D graphics in web browsers. The game adheres to specific requirements outlined for a project, including visualizations, controls, and game mechanics.
 
-**Requirements**
-
-**1. Environment:** The playing field is placed on large gray ground inside a skybox. Textures from the skybox subdirectory are used for creating the skybox environment.
-
-**2. Lighting:** Ambient lights are added to the scene. A spot light with proper intensity tuning is added to get shadow effects.
-
-**3. Playing Field:** The playing field size is 12x12 with a unit cell size of 1x1.The `FloorsCheckerboard_S_Diffuse.jpg` texture map and `FloorsCheckerboard_S_Normal.jpg` normal map are applied to the playing field. Each unit cell of the playing field is covered by one square of the checkerboard pattern.
-
-**4. Boundary Walls:** Walls of height 1 are added as boundaries to the playing field, with the `hardwood2_diffuse.jpg` texture applied. Repeat-wrapping is set along the boundaries, and the `hardwood2_bump.jpg` bump map is used with a bump scale of 0.1.
-
-**5. Snake:** Cubes with rounded corners are used for the snake, with the `lavatile.jpg` texture applied. The head of the snake is distinguishable from the rest of the body. A snake is initialized as a single cube at rest, placed randomly on the playing field. The snake moves forward by one unit every 250 ms.
-
-**6. Apple:** An apple is placed randomly on the playing field. When the snake's head hits the apple, the snake grows by one unit, and the apple repositions to a random, unoccupied cell. To create the apple, the apple geometry defined in the `Apple.obj` file is used. The apple object is scaled and positioned to fit conveniently into one unit cell, with the `Apple_BaseColor.png` texture applied. The `Apple_Normal.png` file serves as a normal map, and `Apple_Roughness.png` as a specific map.
-
-**7. Controls:** Arrow keys control the direction in which the snake moves. The snake starts moving only after the first keystroke.
+**1. Gameplay Mechanics**
+The game is set on a gray playing field with a size of 12x12 units, divided into individual unit cells.
+A snake is placed on the playing field, initially consisting of a single cube at a random unit square.
+A red apple is placed in a random cell on the playing field.
+The snake moves forward by one unit every 250 ms, controlled by arrow keys to specify direction.
+**2. Visual Elements**
+The playing field is set on a large gray field inside a skybox, with textures applied to create a realistic environment.
+Walls of height 1 serve as boundaries to the playing field, with textures applied for visual detail.
+The snake is represented by cubes with rounded corners, distinguished by a green cube for the head and blue cubes for the body.
+The apple object is placed on the playing field and textured with a red apple image.
+A display board is added to show the snake game, with a camera located at the head of the snake and looking in the direction of motion.
+A 3D clock is added to the right-top corner of the display board to display the time.
+Text geometry is added to display the length of the snake at the right-bottom corner of the display board.
+**3. Lighting and Shadows**
+Lighting is implemented with a spot light and ambient light in the scene, adjusted for proper intensity.
+Shadows are cast by the snake, apple, boundary walls, and display board on the ground and playing field, enhancing visual realism.
+**4. Scalability**
+The project is designed for scalability, allowing for potential future enhancements or additions to gameplay mechanics, visual elements, and overall functionality.
 
 **Usage**
 
